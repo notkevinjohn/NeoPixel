@@ -2,7 +2,7 @@ import neopixel
 import board
 import time
 
-NUMPIXELS = 40
+NUMPIXELS = 30
 pixels = neopixel.NeoPixel(board.D18, NUMPIXELS, auto_write=False)
 colors = [
 	[255, 0, 0],
@@ -11,7 +11,6 @@ colors = [
 	[0, 255, 255],
 	[255, 0, 255],
 	[255, 255, 0],
-	[0,0,0]
 ]
 
 for color in colors:
