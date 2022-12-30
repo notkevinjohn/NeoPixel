@@ -9,7 +9,7 @@ color = [255, 0, 255]
 while True:
 	for j in range(0, NUMPIXELS):
 		for i in range(0, NUMPIXELS):
-			if i==NUMPIXELS-j:
+			if i==j:
 				pixels[i] = color
 			else:
 				pixels[i] = [0,0,0]
