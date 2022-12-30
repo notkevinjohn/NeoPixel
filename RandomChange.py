@@ -15,11 +15,11 @@ colors = [
 ]
 
 while True:
-	randomIndex = random.randint(0,len(colors))
+	randomIndex = random.randint(0,len(colors)-1)
 	print (randomIndex)
 
 	for i in range(0, NUMPIXELS):
-		pixels[i] = colors[0]
+		pixels[i] = colors[randomIndex]
 	pixels.show()
 	time.sleep(1)
 	for i in range(0, NUMPIXELS):
